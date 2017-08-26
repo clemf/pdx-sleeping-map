@@ -13,9 +13,9 @@ class App extends Component {
         mapStyle={MapStyle}
         width={window.innerWidth}
         height={window.innerHeight}
-        latitude={45.5433229}
-        longitude={-122.794504}
-        zoom={10}
+        latitude={45.536339}
+        longitude={-122.5842598}
+        zoom={11}
         onViewportChange={(viewport) => {
           // const { width, height, latitude, longitude, zoom } = viewport;
           // Optionally call `setState` and use the state to update the map.
