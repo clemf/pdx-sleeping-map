@@ -10,7 +10,7 @@ style.sources.sleepingBoundaries = {
 };
 
 style.layers.push({
-  id: 'sleeping-boundaries',
+  id: 'sleeping-boundary-polygons',
   source: 'sleepingBoundaries',
   type: 'fill',
   paint: {
@@ -18,6 +18,19 @@ style.layers.push({
     'fill-outline-color': 'black',
     'fill-opacity': 0.5,
   },
+});
+
+style.layers.push({
+  id: 'sleeping-boundary-labels',
+  source: 'sleepingBoundaries',
+  type: 'symbol',
+  layout: {
+    'text-field': '{name}',
+  },
+  paint: {
+    'text-halo-color': 'lightgrey',
+    'text-halo-width': 2,
+  }
 });
 
 export default fromJS(style);
