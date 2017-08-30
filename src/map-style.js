@@ -42,4 +42,18 @@ style.layers.push({
   }
 });
 
+style.layers.push({
+  id: 'sleeping-boundary-counts',
+  source: 'sleepingBoundaries',
+  type: 'symbol',
+  layout: {
+    'text-field': '{count}',
+    'text-offset': [0, -2],
+  },
+  paint: {
+    'text-halo-color': 'lightgrey',
+    'text-halo-width': 2,
+  }
+});
+
 export default fromJS(style);
