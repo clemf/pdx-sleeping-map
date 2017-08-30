@@ -25,8 +25,7 @@ class App extends Component {
     () => {
       this.setState({
         active: year,
-      });
-      this.updateStyle();
+      }, this.updateStyle);
     }
 
   updateStyle = () => {
