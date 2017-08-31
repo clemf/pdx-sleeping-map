@@ -1,6 +1,6 @@
 {
   "name": "sleeping-map",
-  "homepage": "http://clemf.github.io/sleeping-map",
+  "homepage": "http://clemf.github.io/pdx-sleeping-map",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
